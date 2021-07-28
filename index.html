@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="We Create Amazing Websites, Graphics, Illustrations And ECommerce Sites For Your Business.">
+  <meta name="keywords" content="YourWebsiteMaker">
+  <meta name="author" content="Aryan Sharma">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="icon" href="Images/all-time-dev.png">
+  <title>YourWebsiteMaker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .li {
+      text-align: justify;
+    }
+
+    @media(max-width: 500px) {
+      .li {
+        text-align: left
+      }
+    }
+
+    .active {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+    }
+
+    @media(max-width: 992px) {
+      .row>* {
+        flex-shrink: 0;
+        width: 100%;
+        margin-bottom: 10px;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x)/ 2);
+        padding-left: calc(var(--bs-gutter-x)/ 2);
+        margin-top: var(--bs-gutter-y);
+      }
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .py-5 {
+      padding-bottom: 0rem !important;
+    }
+
+    .my-5 {
+      margin-bottom: 0rem !important;
+    }
+  </style>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    @media(min-width: 1000px) and (max-width: 1400px) {
+      .li {
+        text-align: left;
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-2 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-family: 'Josefin Sans', sans-serif;">YourWebsiteMaker</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home" id="b1" onclick="myfunction()">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Services" onclick="myfunction1()" id="b2">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Features" onclick="myfunction6()" id="b7">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#knowledge" onclick="myfunction2()" id="b3">Knowledge</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About" onclick="myfunction3()" id="b4">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Pricing" onclick="myfunction4()" id="b5">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Testimonial" onclick="myfunction5()" id="b6">Testimonial</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-5" id="Home">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1 text-primary" style="font-family:  'Josefin Sans', sans-serif;">
+          YourWebsiteMaker</h1>
+        <p class="lead">"We create beautiful experiences that client loves".</p>.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <a href="login.html"><button type="button"
+              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Login</button></a>
+          <a href="sign-up.html"><button type="button" class="btn btn-outline-primary btn-lg px-4">Sign Up</button></a>
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="rounded-lg-3" src="Images/image1.jpg"alt="YourWebsiteMaker For Small Business" title="YourWebsiteMaker Image"  width="720">
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="b-example-divider mb-0"></div>
+  <div class="container-fluid py-5" id="Services">
+    <h2 class="text-center display-5">Services</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card my-5">
+          <img src="Images/Service1.jpg" class="card-img-top"alt="YourWebsiteMaker For Small Business" title="YourWebsiteMaker Image" >
+          <div class="card-body">
+            <h5 class="card-title">Websites And Designs</h5>
+            <p class="card-text">We Create Amazing Featureful Websites With Beautiful Desings Using Modern Tools And
+              Languages.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card my-5">
+          <img src="Images/Service2.jpg" class="card-img-top"alt="YourWebsiteMaker For Small Business" title="YourWebsiteMaker Image" >
+          <div class="card-body">
+            <h5 class="card-title">Graphics And Illustration</h5>
+            <p class="card-text">We Create Beautiful And Attractive Graphics And Illustration For Websites, Apps And
+              Blogs Etc.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card my-5">
+          <img src="Images/Service3.jpg" class="card-img-top"alt="YourWebsiteMaker For Small Business" title="YourWebsiteMaker Image">
+          <div class="card-body">
+            <h5 class="card-title">ECommerce Sites</h5>
+            <p class="card-text">We Create E-Commerce Stores For Our Clients And Make Their Sites Beautiful And Easy To
+              Use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid py-5" id="Features">
+    <h2 class="text-center pb-5 display-5">Why To Choose Us</h2>
+
+    <div class="row featurette">
+      <div class="col-md-7 my-auto">
+        <h2 class="featurette-heading">We Create Amazing Projects <span class="text-muted">With Beautiful Design.</span>
+        </h2>
+        <p class="lead">We Make Beautiful Frontend Design And Make Layouts Completely Responsive, We Use High Quality
+          Images And Create Functions And Logics Through JavaScript.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="Images/f1.jpg"alt="YourWebsiteMaker For Small Business" title="YourWebsiteMaker Image"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#eee" />
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2 my-auto">
+        <h2 class="featurette-heading">Payment Method <span class="text-muted">For Easy Payment.</span></h2>
+        <p class="lead">We Have Paypal International Payment Method. So That You Can See Your Site As Soon As Possible
+          And Take Your First Step For Success.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="Images/f2.jpg" alt="YourWebsiteMaker For Small Business" title="YourWebsiteMaker Image"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#eee" />
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 my-auto">
+        <h2 class="featurette-heading">Good Price, <span class="text-muted">Great Work.</span></h2>
+        <p class="lead">We Always Try To Provide Our Users More Than The Price. So That They Will Get More Better
+          Websites, Designs, Illustrations And More.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="Images/f3.jpg" alt="YourWebsiteMaker For Small Business" title="YourWebsiteMaker Image" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#eee" />
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2 my-auto">
+        <h2 class="featurette-heading">Amazing Support<span class="text-muted"> For Our Users.</span></h2>
+        <p class="lead">We Have A Live Chat Support. So That Our Users Can Discuss About Their Projects Easily With 2
+          Months Support For Every Plan.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="Images/f4.jpg" alt="YourWebsiteMaker For Small Business" title="YourWebsiteMaker Image" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#eee" />
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+  </div>
+
+  </div>
+  <div class="container-fluid py-5" id="knowledge">
+    <h2 class="text-center pb-5 display-5">What I Know</h2>
+    <div class="progress mb-4 mx-auto" style="width: 60%;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%">HTML</div>
+    </div>
+    <div class="progress mb-4 mx-auto" style="width: 60%;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100" style="width: 80%">CSS</div>
+    </div>
+    <div class="progress mb-4 mx-auto" style="width: 60%;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">JavaScript</div>
+    </div>
+    <div class="progress mb-4 mx-auto" style="width: 60%;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100" style="width: 70%">PHP</div>
+    </div>
+    <div class="progress mb-4 mx-auto" style="width: 60%;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar"
+        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">MySQL</div>
+    </div>
+    <div class="progress mb-4 mx-auto" style="width: 60%;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100" style="width: 80%;background-color: #6610f2">Bootstrap</div>
+    </div>
+    <div class="progress mb-4 mx-auto" style="width: 60%;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100" style="width: 70%;background-color: grey">jQuery</div>
+    </div>
+  </div>
+
+  <div class="container-fluid py-5" id="About">
+    <h2 class="text-center pb-5 display-5">About</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            About Our Site
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body text-capitalize">
+            This is our portfolio site where client contacts us to create or design their website, graphics and
+            illumination etc and we create their project according to their needs.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            About Us
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body text-capitalize">
+            I Am A Web Developer And A Desinger Aryan Sharma I Create Website, Graphics And Illustration Etc And I Have
+            Created More 40 Projects. if You Want To Design Or Build Any Website Etc. You Can Contact Us Through our
+            Live Chat Support Without Any Problem.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid py-5" id="Pricing">
+    <h2 class="text-center display-5">Pricing</h2>
+    <p class="text-center pb-5">If you have any demand from us then you can freely tell us about it.</p>
+    <main>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Graphic Designing</h4>
+            </div>
+            <div class="card-body main-card">
+              <h1 class="card-title pricing-card-title">$20/1500 INR</h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li class="li"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Creating By Using - Canva.</li>
+                <li class="li"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Projects - Logo Designing, Illustrations.</li>
+                <li class="li"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Support - 2 Months Live Chat Support For All The Projects.</li>
+                </li>
+                <li class="li"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Total Projects - 4 Graphic Designing Projects.</li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Web Design</h4>
+            </div>
+            <div class="card-body main-card">
+              <h1 class="card-title pricing-card-title">$40/2900 INR</h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li class="li"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Creating By Using - HTML, CSS, JavaScript And Bootstrap.</li>
+                <li class="li"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Projects - PSD To HTML, Static Websites, Page Designing.</li>
+                <li class="li"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Support - 2 Months Live Chat Support For All The Project.</li>
+                <li class="li"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Total Projects - 2 Web Designing Projects.</li>
+                <li class="li"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Supported Browsers - Chrome, Edge, Firefox, Safari And Opera.</li>
+                <li class="li"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Hosting And Domain - Free Domain And Hosting For Static Sites.</li>
+                </li>
+                <li class="li"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> SEO - Not Supported For This Plan.</li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-white bg-primary border-primary">
+              <h4 class="my-0 fw-normal">ECommerce & Web</h4>
+            </div>
+            <div class="card-body main-card">
+              <h1 class="card-title pricing-card-title">$150/11000 INR</h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li class="li"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Creating By Using - HTML, CSS, JavaScript, Bootstrap, PHP And MySQL.</li>
+                <li class="li"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Projects - ECommerce Sites And Website development.</li>
+                <li class="li"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Support - 2 Months Live Chat Support For The Project.</li>
+                <li class="li"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Total Projects - 1 ECommece Or Web Development Project.</li>
+                <li class="li"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Supported Browsers - Chrome, Edge, Firefox, Safari And Opera.</li>
+                <li class="li"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                    <path
+                      d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                  </svg> Hosting And Domain - Free Hosting And Domain With SSL.</li>
+                </li>
+                <li class="li"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-check2-circle" viewBox="0 0 16 16">
+                  <path
+                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                  <path
+                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                </svg> SEO - Supported For This Plan.</li>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <center>
+  <div id="container"></div>
+
+<script>
+/**
+ * Define the version of the Google Pay API referenced when creating your
+ * configuration
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#PaymentDataRequest|apiVersion in PaymentDataRequest}
+ */
+const baseRequest = {
+  apiVersion: 2,
+  apiVersionMinor: 0
+};
+
+/**
+ * Card networks supported by your site and your gateway
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ * @todo confirm card networks supported by your site and gateway
+ */
+const allowedCardNetworks = ["AMEX", "DISCOVER", "INTERAC", "JCB", "MASTERCARD", "VISA"];
+
+/**
+ * Card authentication methods supported by your site and your gateway
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ * @todo confirm your processor supports Android device tokens for your
+ * supported card networks
+ */
+const allowedCardAuthMethods = ["PAN_ONLY", "CRYPTOGRAM_3DS"];
+
+/**
+ * Identify your gateway and your site's gateway merchant identifier
+ *
+ * The Google Pay API response will return an encrypted payment method capable
+ * of being charged by a supported gateway after payer authorization
+ *
+ * @todo check with your gateway on the parameters to pass
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#gateway|PaymentMethodTokenizationSpecification}
+ */
+const tokenizationSpecification = {
+  type: 'PAYMENT_GATEWAY',
+  parameters: {
+    'gateway': 'example',
+    'gatewayMerchantId': 'exampleGatewayMerchantId'
+  }
+};
+
+/**
+ * Describe your site's support for the CARD payment method and its required
+ * fields
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ */
+const baseCardPaymentMethod = {
+  type: 'CARD',
+  parameters: {
+    allowedAuthMethods: allowedCardAuthMethods,
+    allowedCardNetworks: allowedCardNetworks
+  }
+};
+
+/**
+ * Describe your site's support for the CARD payment method including optional
+ * fields
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ */
+const cardPaymentMethod = Object.assign(
+  {},
+  baseCardPaymentMethod,
+  {
+    tokenizationSpecification: tokenizationSpecification
+  }
+);
+
+/**
+ * An initialized google.payments.api.PaymentsClient object or null if not yet set
+ *
+ * @see {@link getGooglePaymentsClient}
+ */
+let paymentsClient = null;
+
+/**
+ * Configure your site's support for payment methods supported by the Google Pay
+ * API.
+ *
+ * Each member of allowedPaymentMethods should contain only the required fields,
+ * allowing reuse of this base request when determining a viewer's ability
+ * to pay and later requesting a supported payment method
+ *
+ * @returns {object} Google Pay API version, payment methods supported by the site
+ */
+function getGoogleIsReadyToPayRequest() {
+  return Object.assign(
+      {},
+      baseRequest,
+      {
+        allowedPaymentMethods: [baseCardPaymentMethod]
+      }
+  );
+}
+
+/**
+ * Configure support for the Google Pay API
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#PaymentDataRequest|PaymentDataRequest}
+ * @returns {object} PaymentDataRequest fields
+ */
+function getGooglePaymentDataRequest() {
+  const paymentDataRequest = Object.assign({}, baseRequest);
+  paymentDataRequest.allowedPaymentMethods = [cardPaymentMethod];
+  paymentDataRequest.transactionInfo = getGoogleTransactionInfo();
+  paymentDataRequest.merchantInfo = {
+    // @todo a merchant ID is available for a production environment after approval by Google
+    // See {@link https://developers.google.com/pay/api/web/guides/test-and-deploy/integration-checklist|Integration checklist}
+    // merchantId: '12345678901234567890',
+    merchantName: 'Example Merchant'
+  };
+  return paymentDataRequest;
+}
+
+/**
+ * Return an active PaymentsClient or initialize
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/client#PaymentsClient|PaymentsClient constructor}
+ * @returns {google.payments.api.PaymentsClient} Google Pay API client
+ */
+function getGooglePaymentsClient() {
+  if ( paymentsClient === null ) {
+    paymentsClient = new google.payments.api.PaymentsClient({environment: 'TEST'});
+  }
+  return paymentsClient;
+}
+
+/**
+ * Initialize Google PaymentsClient after Google-hosted JavaScript has loaded
+ *
+ * Display a Google Pay payment button after confirmation of the viewer's
+ * ability to pay.
+ */
+function onGooglePayLoaded() {
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.isReadyToPay(getGoogleIsReadyToPayRequest())
+      .then(function(response) {
+        if (response.result) {
+          addGooglePayButton();
+          // @todo prefetch payment data to improve performance after confirming site functionality
+          // prefetchGooglePaymentData();
+        }
+      })
+      .catch(function(err) {
+        // show error in developer console for debugging
+        console.error(err);
+      });
+}
+
+/**
+ * Add a Google Pay purchase button alongside an existing checkout button
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#ButtonOptions|Button options}
+ * @see {@link https://developers.google.com/pay/api/web/guides/brand-guidelines|Google Pay brand guidelines}
+ */
+function addGooglePayButton() {
+  const paymentsClient = getGooglePaymentsClient();
+  const button =
+      paymentsClient.createButton({onClick: onGooglePaymentButtonClicked});
+  document.getElementById('container').appendChild(button);
+}
+
+/**
+ * Provide Google Pay API with a payment amount, currency, and amount status
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#TransactionInfo|TransactionInfo}
+ * @returns {object} transaction info, suitable for use as transactionInfo property of PaymentDataRequest
+ */
+function getGoogleTransactionInfo() {
+  return {
+    countryCode: 'US',
+    currencyCode: 'USD',
+    totalPriceStatus: 'FINAL',
+    // set to cart total
+    totalPrice: '1.00'
+  };
+}
+
+/**
+ * Prefetch payment data to improve performance
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/client#prefetchPaymentData|prefetchPaymentData()}
+ */
+function prefetchGooglePaymentData() {
+  const paymentDataRequest = getGooglePaymentDataRequest();
+  // transactionInfo must be set but does not affect cache
+  paymentDataRequest.transactionInfo = {
+    totalPriceStatus: 'NOT_CURRENTLY_KNOWN',
+    currencyCode: 'USD'
+  };
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.prefetchPaymentData(paymentDataRequest);
+}
+
+/**
+ * Show Google Pay payment sheet when Google Pay payment button is clicked
+ */
+function onGooglePaymentButtonClicked() {
+  const paymentDataRequest = getGooglePaymentDataRequest();
+  paymentDataRequest.transactionInfo = getGoogleTransactionInfo();
+
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.loadPaymentData(paymentDataRequest)
+      .then(function(paymentData) {
+        // handle the response
+        processPayment(paymentData);
+      })
+      .catch(function(err) {
+        // show error in developer console for debugging
+        console.error(err);
+      });
+}
+/**
+ * Process payment data returned by the Google Pay API
+ *
+ * @param {object} paymentData response from Google Pay API after user approves payment
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#PaymentData|PaymentData object reference}
+ */
+function processPayment(paymentData) {
+  // show returned data in developer console for debugging
+    console.log(paymentData);
+  // @todo pass payment token to your gateway to process payment
+  paymentToken = paymentData.paymentMethodData.tokenizationData.token;
+}</script>
+<script async
+  src="https://pay.google.com/gp/p/js/pay.js"
+  onload="onGooglePayLoaded()"></script>
+</center>
+
+  <div class="container-fluid py-5" id="Testimonial">
+    <h2 class="text-center display-5 pb-5">Testimonial</h2>
+    <div class="row">
+      <div class="col-lg-6 md-12">
+        <div class="card">
+          <div class="card-header">
+            Quote
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>I will give 4.5 stars and the web design was really good.</p>
+              <footer class="blockquote-footer">David Johnson</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 md-12">
+        <div class="card">
+          <div class="card-header">
+            Quote
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>I will give 4.7 stars and the support of the site was impressed me a lot.</p>
+              <footer class="blockquote-footer">Rohit Agarwal</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="Images/all-time-dev.png" alt="YourWebsiteMaker For Small Business" title="YourWebsiteMaker Logo"  width="80" height="80">
+          <small class="d-block mb-3 text-muted">&copy; 2021–2022</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Nav Links</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#contain">Home</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#Services">Services</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#knowledge">Knowledge</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#About">About</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#Pricing">Pricing</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#Testimonial">Testimonial</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#Contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About Us</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#About">About Me</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#About">About Our Site</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Social Links</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://github.com/coding-land"><i
+                  class="fa fa-github"></i></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="https://stackoverflow.com/users/15400158/aryan-sharma?tab=profile"><i
+                  class="fa fa-stack-overflow"></i></a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none"
+                href="https://www.quora.com/profile/Gamers-Hub-104"><i class="fa fa-quora"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </div>
+  <script>
+    function myfunction() {
+      var a = document.getElementsByClassName('nav-link');
+      document.getElementById('b1').classList.add('active');
+      document.getElementById('b2').classList.remove('active');
+      document.getElementById('b3').classList.remove('active');
+      document.getElementById('b4').classList.remove('active');
+      document.getElementById('b5').classList.remove('active');
+      document.getElementById('b6').classList.remove('active');
+      document.getElementById('b7').classList.remove('active');
+    }
+
+    function myfunction1() {
+      var a = document.getElementsByClassName('nav-link');
+      document.getElementById('b2').classList.add('active');
+      document.getElementById('b1').classList.remove('active');
+      document.getElementById('b3').classList.remove('active');
+      document.getElementById('b4').classList.remove('active');
+      document.getElementById('b5').classList.remove('active');
+      document.getElementById('b6').classList.remove('active');
+      document.getElementById('b7').classList.remove('active');
+    }
+
+    function myfunction2() {
+      var a = document.getElementsByClassName('nav-link');
+      document.getElementById('b2').classList.remove('active');
+      document.getElementById('b1').classList.remove('active');
+      document.getElementById('b3').classList.add('active');
+      document.getElementById('b4').classList.remove('active');
+      document.getElementById('b5').classList.remove('active');
+      document.getElementById('b6').classList.remove('active');
+      document.getElementById('b7').classList.remove('active');
+    }
+
+    function myfunction3() {
+      var a = document.getElementsByClassName('nav-link');
+      document.getElementById('b2').classList.remove('active');
+      document.getElementById('b1').classList.remove('active');
+      document.getElementById('b3').classList.remove('active');
+      document.getElementById('b4').classList.add('active');
+      document.getElementById('b5').classList.remove('active');
+      document.getElementById('b6').classList.remove('active');
+      document.getElementById('b7').classList.remove('active');
+    }
+
+    function myfunction4() {
+      var a = document.getElementsByClassName('nav-link');
+      document.getElementById('b2').classList.remove('active');
+      document.getElementById('b1').classList.remove('active');
+      document.getElementById('b3').classList.remove('active');
+      document.getElementById('b4').classList.remove('active');
+      document.getElementById('b5').classList.add('active');
+      document.getElementById('b6').classList.remove('active');
+      document.getElementById('b7').classList.remove('active');
+    }
+
+    function myfunction5() {
+      var a = document.getElementsByClassName('nav-link');
+      document.getElementById('b2').classList.remove('active');
+      document.getElementById('b1').classList.remove('active');
+      document.getElementById('b3').classList.remove('active');
+      document.getElementById('b4').classList.remove('active');
+      document.getElementById('b5').classList.remove('active');
+      document.getElementById('b6').classList.add('active');
+      document.getElementById('b7').classList.remove('active');
+    }
+
+    function myfunction6() {
+      var a = document.getElementsByClassName('nav-link');
+      document.getElementById('b2').classList.remove('active');
+      document.getElementById('b1').classList.remove('active');
+      document.getElementById('b3').classList.remove('active');
+      document.getElementById('b4').classList.remove('active');
+      document.getElementById('b5').classList.remove('active');
+      document.getElementById('b6').classList.remove('active');
+      document.getElementById('b7').classList.add('active');
+    }
+  </script>
+
+  <script src="bootstrap.min.js"></script>
+</body>
+
+</html>
